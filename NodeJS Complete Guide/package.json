@@ -5,14 +5,12 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "app.js", // nodemon app.js doesn't work with heroku
+    "start": "nodemon app.js",
     "start-server": "node app.js"
   },
   "author": "Sam Castillo",
   "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  },
+  "devDependencies": {},
   "dependencies": {
     "body-parser": "^1.19.1",
     "cors": "^2.8.5",
@@ -21,6 +19,7 @@
     "express-handlebars": "^6.0.2",
     "mongodb": "^4.4.0",
     "mongoose": "^6.2.2",
+    "nodemon": "^2.0.15",
     "pug": "^3.0.2"
   }
 }
